@@ -1,0 +1,109 @@
+.tabs {
+    width: 600px;
+    min-height: 400px;
+    background-color: #212534;
+    box-shadow: 0 23px 57px rgba(0, 0, 0, 0.4);
+    position: relative;
+    z-index: 1;
+    margin: auto;
+    font-family: 'Lato', sans-serif;
+    &_container {
+        margin: 55px 45px 65px;
+    }
+    &_header {
+        background-color: #2b3040;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        &__item {
+            text-align: center;
+            color: #8d91a3;
+            text-transform: uppercase;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 28px;
+            border: 2px solid transparent;
+            border-top: none;
+            padding: 30px 15px 20px;
+            cursor: pointer;
+            transition: all 0.4s;
+            &:hover {
+            border: 2px solid;
+            border-top: none;
+            border-bottom: 2px solid transparent;  
+            }
+        }
+        &__item-active {
+            border-bottom: 2px solid;
+        }
+        &__icon {
+            height: 22px;
+            fill: green;
+            opacity: 0.7;
+            fill-rule: evenodd;       
+        }
+    }
+    &_game {
+        width: 160px;
+    }
+    &_stars {
+        display: flex;
+        justify-content: center;
+        margin-top: 5px;
+    }
+    &_game-description {
+        margin-left: 40px;
+    }
+    &_title {
+        color: white;
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 50px;
+        margin: 0;
+    }
+    &_subTitle {
+        color: #fdfdfd;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+    &_gameInfo {
+        color: #b7bacd;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+        margin: 30px 0;
+    }
+    &_content {
+        display: flex;
+        flex-direction: column;
+    }
+    &_row {
+        display: flex;
+        flex-direction: row;
+    }
+    &_functional {
+        margin-top: 15px;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+    }
+    &_stars {
+        display: flex;
+        justify-content: center;
+        margin-top: 5px;
+        margin-left: 10px;
+    }
+}
+
+.card,
+.basket,
+.comment {
+    fill: #8d91a3;
+}
+
+.hidden {
+    display: none;
+}
+

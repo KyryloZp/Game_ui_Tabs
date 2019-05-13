@@ -1,0 +1,9 @@
+include ../Tabs/tabs.pug
+
+mixin main()
+	section.main
+		+tabs()
+		.second-Page(class= 'hidden')
+			h1 Second Page
+		.third-Page(class= 'hidden')
+			h1 Third-Page

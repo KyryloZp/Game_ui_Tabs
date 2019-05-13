@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Web-Design</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <section class="main">
+      <div class="tabs">
+        <div class="tabs_header">
+          <div class="tabs_header__item tabs_header__item-active">
+            <object class="tabs_header__icon" type="image/svg+xml" data="img/comment.svg">Your browser does not support SVGs</object>
+            <p class="tabs_header__commit">information</p>
+          </div>
+          <div class="tabs_header__item">
+            <object class="tabs_header__icon" type="image/svg+xml" data="img/card.svg">Your browser does not support SVGs</object>
+            <p class="tabs_header__commit">rating info</p>
+          </div>
+          <div class="tabs_header__item">
+            <object class="tabs_header__icon" type="image/svg+xml" data="img/basket.svg">Your browser does not support SVGs</object>
+            <p class="tabs_header__commit">where to buy</p>
+          </div>
+        </div>
+        <div class="tabs_container">
+          <div class="tabs_content">
+            <div class="game-information">
+              <div class="tabs_row"><img class="tabs_game" src="img/Farcry4.jpg" alt="comment"/>
+                <div class="tabs_game-description">
+                  <h1 class="tabs_title">FarCry 4</h1>
+                  <p class="tabs_subTitle">First Released Nov 17, 2014</p>
+                  <p class="tabs_gameInfo">
+                     In Far Cry 4, players find themselves in Kyrat, a breathtaking, perilous and wild region of the Hima
+                    layas struggling under the regime of a despotic self-appointed king.
+                  </p>
+                </div>
+              </div>
+              <div class="tabs_row">
+                <div class="tabs_functional">
+                  <div class="tabs_stars">
+                    <fieldset class="rating">
+                      <input type="radio" id="star5" name="rating" value="5"/>
+                      <label class="full" for="star5" title="Awesome - 5 stars"></label>
+                      <input type="radio" id="star4half" name="rating" value="4 and a half"/>
+                      <label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                      <input type="radio" id="star4" name="rating" value="4"/>
+                      <label class="full" for="star4" title="Pretty good - 4 stars"></label>
+                      <input type="radio" id="star3half" name="rating" value="3 and a half"/>
+                      <label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                      <input type="radio" id="star3" name="rating" value="3"/>
+                      <label class="full" for="star3" title="Meh - 3 stars"></label>
+                      <input type="radio" id="star2half" name="rating" value="2 and a half"/>
+                      <label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                      <input type="radio" id="star2" name="rating" value="2"/>
+                      <label class="full" for="star2" title="Kinda bad - 2 stars"></label>
+                      <input type="radio" id="star1half" name="rating" value="1 and a half"/>
+                      <label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                      <input type="radio" id="star1" name="rating" value="1"/>
+                      <label class="full" for="star1" title="Sucks big time - 1 star"></label>
+                      <input type="radio" id="starhalf" name="rating" value="half"/>
+                      <label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                    </fieldset>
+                  </div>
+                  <div class="tabs_price">
+                    <div class="price">
+                      <p class="price_discount">20% OFF!</p>
+                      <p class="price_value">$59.96</p>
+                    </div>
+                  </div>
+                  <button class="button">BUY IT NOW</button>
+                </div>
+              </div>
+            </div>
+            <h1 class="rating hidden">second page</h1>
+            <h1 class="basket hidden">third page</h1>
+          </div>
+        </div>
+      </div>
+      <div class="second-Page hidden">
+        <h1>Second Page</h1>
+      </div>
+      <div class="third-Page hidden">
+        <h1>Third-Page</h1>
+      </div>
+    </section>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="comon.js"></script>
+</html>

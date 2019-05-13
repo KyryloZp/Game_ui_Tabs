@@ -1,0 +1,47 @@
+include ../ratingStars/ratingStars.pug
+include ../price/price.pug
+include ../button/button.pug
+include ../ratingCircle/ratingCircle.pug
+
+mixin headerItem(icon_name, icon__commit, alt, valueClass)
+        .tabs_header__item(class= valueClass)
+            object(class="tabs_header__icon" type="image/svg+xml" data="img/"+icon_name) Your browser does not support SVGs
+            p(class= "tabs_header__commit")= icon__commit
+
+
+mixin gameInf(classcontainer) 
+    div(class= classcontainer)
+        .tabs_row
+            img(class="tabs_game" ,src="img/Farcry4.jpg", alt="comment")
+            .tabs_game-description
+                h1.tabs_title FarCry 4
+                p.tabs_subTitle First Released Nov 17, 2014
+                p.tabs_gameInfo 
+                    |In Far Cry 4, players find themselves in Kyrat, a breathtaking, perilous and wild region of the Hima
+                    |layas struggling under the regime of a despotic self-appointed king.
+        .tabs_row
+            .tabs_functional
+                .tabs_stars
+                    +ratingStars()
+                .tabs_price
+                    +price('20% OFF!', '$59.96')
+                +buttons('BUY IT NOW')
+
+
+
+
+
+mixin tabs(alt) 
+    .tabs(class= alt)
+        .tabs_header
+            +headerItem("comment.svg", "information", "comment", "tabs_header__item-active")
+            +headerItem("card.svg", "rating info", "rating")
+            +headerItem("basket.svg", "where to buy", "basket")
+        .tabs_container
+            .tabs_content
+                +gameInf('game-information')
+                h1.rating(class= "hidden") second page
+                h1.basket(class= "hidden") third page
+
+
+
